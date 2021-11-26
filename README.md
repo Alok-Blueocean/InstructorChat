@@ -1,2 +1,2 @@
 # InstructorChat
-Instrctor Student HelpDes
+Instrctor Student HelpDesk

@@ -21,6 +21,8 @@ class AnswerRequest(models.Model):
 	
 
 class AnswerResponse(models.Model):
+	answer_request = models.OneToOneField(AnswerRequest,
+		on_delete=models.CASCADE,blank=False,null=False)
 	answer = models.ForeignKey(Answer,on_delete=models.CASCADE,
 		blank=False,null=False)
 	student = models.ForeignKey(Student,on_delete=models.CASCADE)
