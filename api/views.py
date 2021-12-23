@@ -24,7 +24,7 @@ class AnswerRequestViewSet(viewsets.ModelViewSet):
 
 	serializer_class = AnswerRequestSerializer
 	queryset = AnswerRequest.objects.all()
-	authentication_classes = [TokenAuthentication]
+	# authentication_classes = [TokenAuthentication]
 	permission_classes = [IsAuthenticated]
 	
 	def perform_create(self, serializer):
